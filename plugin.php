@@ -42,5 +42,4 @@ add_action('breakdance_loaded', function () {
     );
 },
     // register elements before loading them
-    9
 );
