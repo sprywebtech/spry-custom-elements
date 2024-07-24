@@ -91,7 +91,20 @@ class MyCustomElement extends \Breakdance\Elements\Element
 
     static function contentControls()
     {
-        return [];
+        return [c(
+        "text",
+        "text",
+        [],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      ), getPresetSection(
+      "EssentialElements\\typography",
+      "Typography",
+      "typography",
+       ['type' => 'popout']
+     )];
     }
 
     static function settingsControls()
